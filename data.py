@@ -19,8 +19,8 @@ class Record:
         return "class: {}, title: {}, id:{}, synopsis:{}".format(self.cls, self.title, self.id, self.synopsis)
         
 class RecordStore:
-    train_records = []
-    test_records = []
+    train_records: List[Record] = []
+    test_records: List[Record] = []
     DATA_ROOT = path.join(".", "github_data")
 
     @staticmethod
