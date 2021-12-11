@@ -6,3 +6,5 @@ scratchpad/*
 .python-version
 *.egg-info/*
 kernels.json
+playground
+notebooks
