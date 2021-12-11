@@ -1,6 +1,7 @@
 scratchpad/*
 *.ipynb_checkpoints
 *__pycache__*
+iml_group_proj/*
 *_output/
 *_data/
 .python-version
