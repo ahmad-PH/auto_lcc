@@ -6,6 +6,7 @@ scratchpad/*
 .python-version
 *.egg-info/*
 kernels.json
-playground
-notebooks
-github_data
+playground/*
+notebooks/*
+github_data/*
+sync.sh

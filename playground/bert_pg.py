@@ -27,15 +27,15 @@ models = [
         (MLPClassifier(random_state=1, max_iter=250, hidden_layer_sizes=(1000, 1000), early_stopping=True), None, 'MLP_1000x2'),
         ]
 
-# Hacky way to remove the sypnosis
-trained_models_1 = train_models(models, X_train[:, :X_train.shape[1]//2], y_train, {"sypnosis": False})
-result_df_1 = evaluate_many(trained_models_1, X_train[:, :X_train.shape[1]//2], y_train, X_test[:, :X_test.shape[1]//2], y_test)
+# # Hacky way to remove the sypnosis
+# trained_models_1 = train_models(models, X_train[:, :X_train.shape[1]//2], y_train, {"sypnosis": False})
+# result_df_1 = evaluate_many(trained_models_1, X_train[:, :X_train.shape[1]//2], y_train, X_test[:, :X_test.shape[1]//2], y_test)
 
 trained_models_2 = train_models(models, X_train, y_train, {"sypnosis": True})
 result_df_2 = evaluate_many(trained_models_2, X_train, y_train, X_test, y_test)
 
 # Full Evaluation
-result_df_full = pd.concat([result_df_1, result_df_2], axis=0)
+result_df_full = result_df_2 #pd.concat([result_df_1, result_df_2], axis=0)
 
 print(result_df_full.head(100))
 result_df_full.to_csv(f'_output/bert_result_{time.strftime("%Y%m%d-%H%M%S")}.csv')
