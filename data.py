@@ -23,6 +23,10 @@ class RecordStore:
     test_records: List[Record] = []
     DATA_ROOT = path.join(".", "github_data")
 
+    """
+    Loads the records, without their embeddings. Should always be used before accessing any of the other functions 
+    or properties of this class.
+    """
     @staticmethod
     def load():
         with open(path.join(RecordStore.DATA_ROOT, 'trainTest.pk'), 'rb') as f:
@@ -33,6 +37,9 @@ class RecordStore:
         RecordStore.train_records = [Record(cls, title, synopsis, id) for (cls, title, synopsis, id) in train]
         RecordStore.test_records = [Record(cls, title, synopsis, id) for (cls, title, synopsis, id) in test]
     
+    """
+    Loads the bert embededdings into memory. Only use if you need these embeddings.
+    """
     @staticmethod
     def load_bert():
         with open(path.join(RecordStore.DATA_ROOT, 'bert_train.pk'), 'rb') as f:
@@ -49,6 +56,9 @@ class RecordStore:
             record.title_embeddings_bert = title_embeddings[i]
             record.synopsis_embeddings_bert = synopsis_embeddings[i]
 
+    """
+    Loads the word2vec embededdings into memory. Only use if you need these embeddings.
+    """
     @staticmethod
     def load_w2v():
         with open(path.join(RecordStore.DATA_ROOT, 'w2v_train.pk'), 'rb') as f:
