@@ -1,2 +1,8 @@
 scratchpad/*
 *.ipynb_checkpoints
+*__pycache__*
+*_output/
+*_data/
+.python-version
+*.egg-info/*
+kernels.json
