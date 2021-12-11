@@ -35,7 +35,19 @@ class RecordStore:
     
     @staticmethod
     def load_bert():
-        pass # TODO
+        with open(path.join(RecordStore.DATA_ROOT, 'bert_train.pk'), 'rb') as f:
+            [title_embeddings, synopsis_embeddings] = pickle.load(f)
+
+        for i, record in enumerate(RecordStore.train_records):
+            record.title_embeddings_bert = title_embeddings[i]
+            record.synopsis_embeddings_bert = synopsis_embeddings[i]
+
+        with open(path.join(RecordStore.DATA_ROOT, 'bert_test.pk'), 'rb') as f:
+            [title_embeddings, synopsis_embeddings] = pickle.load(f)
+
+        for i, record in enumerate(RecordStore.test_records):
+            record.title_embeddings_bert = title_embeddings[i]
+            record.synopsis_embeddings_bert = synopsis_embeddings[i]
 
     @staticmethod
     def load_w2v():
