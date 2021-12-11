@@ -11,3 +11,5 @@ playground/*
 notebooks/*
 github_data/*
 sync.sh
+requirements.txt
+setup.py
