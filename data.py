@@ -1,5 +1,6 @@
 from typing import *
 import pickle
+import os.path as path
 
 class Record:
     def __init__(self, cls, title, synopsis, id):
@@ -20,10 +21,11 @@ class Record:
 class RecordStore:
     train_records = []
     test_records = []
+    DATA_ROOT = path.join(".", "github_data")
 
     @staticmethod
     def load():
-        with open('trainTest.pk', 'rb') as f:
+        with open(path.join(RecordStore.DATA_ROOT, 'trainTest.pk'), 'rb') as f:
             classes = pickle.load(f)
             train = pickle.load(f)
             test = pickle.load(f)
@@ -37,11 +39,21 @@ class RecordStore:
 
     @staticmethod
     def load_w2v():
-        with open('w2v_train.pk', 'rb') as f:
+        with open(path.join(RecordStore.DATA_ROOT, 'w2v_train.pk'), 'rb') as f:
             [title_embeddings, synopsis_embeddings] = pickle.load(f)
 
         for i, record in enumerate(RecordStore.train_records):
             record.title_embeddings_w2v = title_embeddings[i]
             record.synopsis_embeddings_w2v = synopsis_embeddings[i]
+
+        with open(path.join(RecordStore.DATA_ROOT, 'w2v_test.pk'), 'rb') as f:
+            [title_embeddings, synopsis_embeddings] = pickle.load(f)
+
+        for i, record in enumerate(RecordStore.test_records):
+            record.title_embeddings_w2v = title_embeddings[i]
+            record.synopsis_embeddings_w2v = synopsis_embeddings[i]
+
+
+        
     
 
