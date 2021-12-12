@@ -21,7 +21,7 @@ class Record:
 class RecordStore:
     train_records: List[Record] = []
     test_records: List[Record] = []
-    DATA_ROOT = path.join(".", "github_data")
+    DATA_ROOT = path.join(path.dirname(__file__), "github_data")
 
     """
     Loads the records, without their embeddings. Should always be used before accessing any of the other functions 
