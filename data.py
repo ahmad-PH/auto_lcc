@@ -15,6 +15,9 @@ class Record:
         self.title_embeddings_w2v: List[Any] = None
         self.synopsis_embeddings_w2v: List[Any] = None
 
+        self.title_embeddings_tfidf: List[Any] = None
+        self.synopsis_embeddings_tfidf: List[Any] = None
+
     def __str__(self) -> str:
         return "class: {}, title: {}, id:{}, synopsis:{}".format(self.cls, self.title, self.id, self.synopsis)
         
@@ -56,6 +59,7 @@ class RecordStore:
             record.title_embeddings_bert = title_embeddings[i]
             record.synopsis_embeddings_bert = synopsis_embeddings[i]
 
+
     """
     Loads the word2vec embededdings into memory. Only use if you need these embeddings.
     """
@@ -75,7 +79,23 @@ class RecordStore:
             record.title_embeddings_w2v = title_embeddings[i]
             record.synopsis_embeddings_w2v = synopsis_embeddings[i]
 
+    """
+    Loads the word2vec embededdings into memory. Only use if you need these embeddings.
+    """
+    @staticmethod
+    def load_tfidf():
+        with open(path.join(RecordStore.DATA_ROOT, 'tfidf_train.pk'), 'rb') as f:
+            [title_embeddings, synopsis_embeddings] = pickle.load(f)
 
-        
-    
+        for i, record in enumerate(RecordStore.train_records):
+            record.title_embeddings_tfidf = title_embeddings[i]
+            record.synopsis_embeddings_tfidf = synopsis_embeddings[i]
+
+        with open(path.join(RecordStore.DATA_ROOT, 'tfidf_test.pk'), 'rb') as f:
+            [title_embeddings, synopsis_embeddings] = pickle.load(f)
+
+        for i, record in enumerate(RecordStore.test_records):
+            record.title_embeddings_tfidf = title_embeddings[i]
+            record.synopsis_embeddings_tfidf = synopsis_embeddings[i]
+
 
