@@ -1,15 +1,15 @@
 scratchpad/*
 *.ipynb_checkpoints
 *__pycache__*
-iml_group_proj/*
 *_output/
 *_data/
 .python-version
 *.egg-info/*
 kernels.json
-playground/*
 notebooks/*
 github_data/*
 sync.sh
 requirements.txt
 setup.py
+iml_group_proj/*
+playground/*
