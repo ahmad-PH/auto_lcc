@@ -8,7 +8,7 @@ from transformers import BertModel, BertTokenizer
 
 DATA_PATH = "github_data"
 BERT_MODEL_NAME = "prajjwal1/bert-small"
-OUTPUT_ROOT_PATH = f"_output/{BERT_MODEL_NAME.replace('/','_').replace('', '_')}_output/"
+OUTPUT_ROOT_PATH = f"_output/{BERT_MODEL_NAME.split('/')[0].replace('', '_')}_output/"
 
 # BERT_MODEL_NAME = "prajjwal1/bert-tiny"
 # BERT_MODEL_NAME = "prajjwal1/bert-medium"
