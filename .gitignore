@@ -13,3 +13,4 @@ requirements.txt
 setup.py
 iml_group_proj/*
 playground/*
+runner/build_bert_embeddings.py
