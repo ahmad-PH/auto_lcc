@@ -47,7 +47,8 @@ def from_sentences_to_bert_embeddings(sentences: List[str]):
 vprint("Getting BERT embeddings...")
 os.makedirs(OUTPUT_ROOT_PATH, exist_ok=True)
 
-for (titles, synopsis, name) in [(test.title, test.synopsis, "test"),(train.title, train.synopsis, "train")]:
+# for (titles, synopsis, name) in [(test.title, test.synopsis, "test"),(train.title, train.synopsis, "train")]:
+for (titles, synopsis, name) in [(train.title, train.synopsis, "train")]:
     title_embeddings = from_sentences_to_bert_embeddings(titles)
     synopsis_embeddings = from_sentences_to_bert_embeddings(synopsis)
     assert len(title_embeddings) == len(synopsis_embeddings), f"Title lengths({len(title_embeddings)}) is not equal to synopsis's({len(synopsis_embeddings)})"
