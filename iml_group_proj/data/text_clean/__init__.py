@@ -5,7 +5,6 @@ from typing import Callable, List, Set, Union, Tuple, Any
  
 
 class CleanerId(Enum):
-    # Number has no meanings. Could have made string but lazy to type :| 
     TO_PD = 0
     LOWER = 1
     REMOVE_PUNC = 2

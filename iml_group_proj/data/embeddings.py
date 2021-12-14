@@ -23,7 +23,8 @@ class EmbeddingsData(NamedTuple):
 
 class EmbeddingsType: 
     W2V = "w2v"
-    BERT = "bert"
+    BERT_XS = "bert_tiny"
+    BERT_S = "bert_small"
     TFIDF = "tfidf"
 
 class EmbeddingsDataLoader:
