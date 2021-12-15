@@ -10,9 +10,29 @@
 $ pip install -r requirements.txt
 ```
 
-2. Ensure that there are data in "github_data" 
+2. Set PYTHONPATH to the root of this folder by running the command below at the root directory of the project.
+
+```
+$ export PYTHONPATH=$(PWD)
+```
+
+3. Ensure that there are data in "github_data" 
 
 If not, use the runner python scripts in "runner" folder to create features.
+
+*Build all the features* 
+
+Use the command below to build all the features. The whole features preparation steps take around 2.5 hours.
+
+```{shell}
+$ python runner/build.py
+```
+
+
+Due to its large memory consumption, the process might crash along the way.
+If that's the case, please try again by running the same command. The script is able to pick up on where it left of.
+
+*Build each feature separately*
 
 *BERT embeddings*
 
@@ -21,7 +41,6 @@ $ python runner/build_bert_embeddings.py --model_size=small
 ```
 
 Note that as the whole process requires large amount of memory, the process might crash halfway.
-If that's the case, please try again by running the same command. The script is able to pick up on where it left of.
 
 *Word2Vec embeddings*
 
