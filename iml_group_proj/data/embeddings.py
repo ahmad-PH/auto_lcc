@@ -25,6 +25,7 @@ class EmbeddingsType:
     W2V = "w2v"
     BERT_XS = "bert_tiny"
     BERT_S = "bert_small"
+    BERT_L = "bert_large"
     TFIDF = "tfidf"
 
 class EmbeddingsDataLoader:

@@ -45,6 +45,8 @@ def create_and_save_tfidf_features(train, test, bow: bool = True):
 
     train_title_tfidf = title_vectorizer.fit_transform(cleaned_train_title)
     train_sypnosis_tfidf = sypnosis_vectorizer.fit_transform(cleaned_train_sypnosis)
+    print(train_title_tfidf.shape)
+    print(train_sypnosis_tfidf.shape)
     
     print(f"Saving to {os.path.join(OUTPUT_ROOT_PATH, OUTPUT_PATH.format('train'))}")
     with open(os.path.join(OUTPUT_ROOT_PATH, OUTPUT_PATH.format("train")), "wb") as f:
