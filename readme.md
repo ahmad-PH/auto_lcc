@@ -4,16 +4,16 @@
 
 ### Running the training code for non-sequential model
 
-*Starting point*
+*Starting point*  
 The main notebook for running all the models are in the notebook "report/Library of Congression Classification.ipynb".
 Note that the training process required preprocessed embeddings data which lies in "github_data" folder. 
 
 
-**Preprocessed Embeddings/Featuers**
+**Preprocessed Embeddings/Featuers**  
 Please ensure that the data is downloaded and placed in the "github_data" folder.
 The code for preprocessing these embeddings can be found in files under "runner" folder.
 
-**Caching**
+**Caching**  
 Note that once each model finishes fitting to the data, the code also stored the result model as a pickle file in the "_cache" folder.
 
 
