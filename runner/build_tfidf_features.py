@@ -72,7 +72,7 @@ def create_and_save_tfidf_features(train, test, bow: bool = True):
     with open(os.path.join(OUTPUT_ROOT_PATH, OUTPUT_PATH.format("test")), "wb") as f:
         pickle.dump([test_title_tfidf, test_synopsis_tfidf], f)
 
-classes, train, test = load_libofc_df("github_data/trainTest.pk")
-create_and_save_tfidf_features(train, test, bow=False)
-
-print("Done!")
+if __name__  == "__main__":
+    classes, train, test = load_libofc_df("github_data/trainTest.pk")
+    create_and_save_tfidf_features(train, test, bow=False)
+    print("Done!")

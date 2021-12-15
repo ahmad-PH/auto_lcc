@@ -50,6 +50,9 @@ def human_readable_size(size, decimal_places=3):
 
 @click.command()
 @click.option("--model_size", default="small", help="size of BERT model. expected [tiny, small, large]")
+def build_bert_cli(model_size: str):
+    return build_bert_embeddings(model_size)
+
 def build_bert_embeddings(model_size: str):
 
     assert model_size in ["tiny", "small", "large"], f"{model_size} not expected, expected [tiny, small, large]"

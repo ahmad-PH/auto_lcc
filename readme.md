@@ -7,11 +7,15 @@ To run our code, you need the following packages:
 scikit-learn=1.0.1
 pytorch=1.10.0
 python=3.9.7
-numpy=1.21.2
+numpy=1.21.4
 notebook=6.4.6
-matplotlib=3.4.3
-gensim=4.0.1
+matplotlib=3.5.0
+gensim=4.1.2
 tqdm=4.62.3
+transformers=4.13.0
+nltk=3.6.5
+pandas=1.3.4
+seaborn=0.11.2
 ```
 
 ### Checklist
@@ -37,7 +41,7 @@ If not, use the runner python scripts in "runner" folder to create features.
 Use the command below to build all the features. The whole features preparation steps take around 2.5 hours.
 
 ```{shell}
-$ python runner/build.py
+$ python runner/build_all_features.py
 ```
 
 

@@ -1,5 +1,6 @@
 import os
-from runner import build_bert_embeddings, build_tfidf_features
+from runner import build_tfidf_features
+from runner.build_bert_embeddings import build_bert_embeddings
     
 
 if __name__ == "__main__":
