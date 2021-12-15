@@ -24,4 +24,11 @@ The training of LSTM on BERT embeddings were all done in Google Collab.
 These notebooks were then saved as jupyter notebook, and stored in this repository. 
 To view the result, please view the notebooks in "report/rnn" folder.
 
+
+![screenshot_rnn_1](https://github.com/ahmad-PH/iml_group_proj/blob/main/public/rnn_notebook_screenshot_1.png?raw=true)
+
+![screenshot_rnn_2](https://github.com/ahmad-PH/iml_group_proj/blob/main/public/rnn_notebook_screenshot_2.png?raw=true)
+
+
+
 The rnn codes (LSTM, GRU) can also be found in iml_group_proj/model/bert_[lstm|gpu].py
