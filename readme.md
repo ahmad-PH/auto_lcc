@@ -33,6 +33,7 @@ Note that the training process required preprocessed embeddings data which lies 
 **Caching**  
 Note that once each model finishes fitting to the data, the code also stored the result model as a pickle file in the "_cache" folder.
 
+![nonsequential_notebook_screenshot_1.png](https://github.com/ahmad-PH/iml_group_proj/blob/main/public/nonsequential_notebook_screenshot_1.png?raw=true)
 
 
 ### Training code for sequential model
