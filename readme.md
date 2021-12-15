@@ -1,10 +1,10 @@
-# Automatic Library of Congress Classification Code
+## Automatic Library of Congress Classification Code
 
 ---
 
 ### Running the training code for non-sequential model
 
-The main notebook for running all the models are in the notebook [].
+The main notebook for running all the models are in the notebook [report/Library of Congression Classification.ipynb](Link).
 Note that the training process required preprocessed embeddings data which lies in "github_data" folder. 
 Please ensure that the data is downloaded and placed in the github_data folder.
 
