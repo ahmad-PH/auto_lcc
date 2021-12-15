@@ -1,6 +1,18 @@
 ## Automatic Library of Congress Classification Code
 
 ---
+### Dependencies
+To run our code, you need the following packages:
+```
+scikit-learn=1.0.1
+pytorch=1.10.0
+python=3.9.7
+numpy=1.21.2
+notebook=6.4.6
+matplotlib=3.4.3
+gensim=4.0.1
+tqdm=4.62.3
+```
 
 ### Checklist
 
