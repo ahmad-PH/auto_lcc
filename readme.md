@@ -6,9 +6,9 @@
 
 1. Install python packages with requirements.txt
 
-'''
+```
 pip install -r requirements.txt
-'''
+```
 
 2. Ensure that there are data in "github_data" 
 
@@ -16,9 +16,9 @@ If not, use the runner python scripts in "runner" folder to create features/
 
 For instance, to create BERT embeddings, use 
 
-'''{shell}
+```{shell}
 $ python runner/build_bert_embeddings.py --model_size=small 
-'''
+```
 
 Note that as the whole process requires large amount of memory, the process might crash halfway.
 If that's the case, please try again, or download the data directly from our Google Drive (BERT small and large unavailable).
