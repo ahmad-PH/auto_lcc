@@ -29,7 +29,6 @@ class EmbeddingsType:
     TFIDF = "tfidf"
 
 class EmbeddingsDataLoader:
-    # TODO: Write specific loader for BERT
     @staticmethod
     def load(file_path: os.PathLike, e_type: str):
         _, train_df, test_df = load_libofc_df(os.path.join(file_path, "trainTest.pk"))

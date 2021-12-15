@@ -18,7 +18,6 @@ class GRU(nn.Module):
         self.final = nn.Linear(self.hidden_dim * 2, num_class)
         self.relu = nn.ReLU()
 
-    # Expect 1 row for now
     def forward(self, x, x_lengths, synop):
         h_0 = Variable(torch.zeros(self.lstm_layers, x_lengths, self.hidden_dim)).to(dev) #hidden state
 
