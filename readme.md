@@ -23,14 +23,21 @@ $ python runner/build_bert_embeddings.py --model_size=small
 Note that as the whole process requires large amount of memory, the process might crash halfway.
 If that's the case, please try again by running the same command. The script is able to pick up on where it left of.
 
+*Word2Vec embeddings*
+
+Please download directly from our Google Drive. [[Link](https://drive.google.com/drive/folders/1B-XNvIdGZazLvDjnH2xWGUBfoe-Jt53B?usp=sharing)]
+<!-- ```{shell} -->
+<!-- $ python runner/build_bert_embeddings.py --model_size=small -->  
+<!-- ``` -->
+
+
 *tf-idf features*
 
 ```{shell}
 $ python runner/build_tfidf_features.py
 ```
 
-
-If the download still fails, then please download the data directly from our Google Drive (BERT small and large unavailable).
+If the download still fails, then please download the data directly from our Google Drive [[Link](https://drive.google.com/drive/folders/1B-XNvIdGZazLvDjnH2xWGUBfoe-Jt53B?usp=sharing)] (BERT small and large unavailable).
 
 
 ### Running the training code for non-sequential model
