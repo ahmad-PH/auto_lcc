@@ -14,14 +14,23 @@ $ pip install -r requirements.txt
 
 If not, use the runner python scripts in "runner" folder to create features.
 
-For instance, to create BERT embeddings, use 
+*BERT embeddings*
 
 ```{shell}
-$ python runner/build_bert_embeddings.py --model_size=small 
+$ python runner/build_bert_embeddings.py --model_size=small  
 ```
 
 Note that as the whole process requires large amount of memory, the process might crash halfway.
-If that's the case, please try again, or download the data directly from our Google Drive (BERT small and large unavailable).
+If that's the case, please try again by running the same command. The script is able to pick up on where it left of.
+
+*tf-idf features*
+
+```{shell}
+$ python runner/build_tfidf_features.py
+```
+
+
+If the download still fails, then please download the data directly from our Google Drive (BERT small and large unavailable).
 
 
 ### Running the training code for non-sequential model
