@@ -55,6 +55,7 @@ If that's the case, please try again by running the same command. The script is 
 $ python runner/build_bert_embeddings.py --model_size=small  
 ```
 *W2V embeddings*
+
 For this one, you will need to run the `generate_w2v_embedddings.ipynb` notebook.
 
 *tf-idf features*
