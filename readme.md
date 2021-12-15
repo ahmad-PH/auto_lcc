@@ -27,7 +27,7 @@ If that's the case, please try again, or download the data directly from our Goo
 ### Running the training code for non-sequential model
 
 **Starting point**  
-The main notebook for running all the models are in the notebook "report/Library of Congression Classification.ipynb".  
+The main notebook for running all the models is in the notebook [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/Library%20of%20Congression%20Classification.ipynb)].  
 Note that the training process required preprocessed embeddings data which lies in "github_data" folder. 
 
 **Caching**  
