@@ -1,4 +1,4 @@
-scratchpad/*
+ecratchpad/*
 *.ipynb_checkpoints
 *__pycache__*
 *_output/
@@ -15,3 +15,4 @@ iml_group_proj_back/*
 playground/*
 runner/build_bert_embeddings.py
 _cache/
+requirements.txt
