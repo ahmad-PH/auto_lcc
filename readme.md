@@ -12,7 +12,7 @@ $ pip install -r requirements.txt
 
 2. Ensure that there are data in "github_data" 
 
-If not, use the runner python scripts in "runner" folder to create features/
+If not, use the runner python scripts in "runner" folder to create features.
 
 For instance, to create BERT embeddings, use 
 
@@ -26,7 +26,7 @@ If that's the case, please try again, or download the data directly from our Goo
 
 ### Running the training code for non-sequential model
 
-**Starting point*  *
+**Starting point**  
 The main notebook for running all the models are in the notebook "report/Library of Congression Classification.ipynb".  
 Note that the training process required preprocessed embeddings data which lies in "github_data" folder. 
 
