@@ -34,7 +34,7 @@ or any other package manager you would like.
 $ export PYTHONPATH=$(PWD)
 ```
 
-3. Download the data needed from [this link]() and put it in the project root folder. Make sure the folder is called `github_data`.
+3. Download the data needed from [this link](https://drive.google.com/drive/folders/1B-XNvIdGZazLvDjnH2xWGUBfoe-Jt53B?usp=sharing) and put it in the project root folder. Make sure the folder is called `github_data`.
 
 For the features (tf_idf, w2v, and BERT), you can also use the runner python scripts in "runner" folder to create features.
 
@@ -54,15 +54,6 @@ If that's the case, please try again by running the same command. The script is 
 ```{shell}
 $ python runner/build_bert_embeddings.py --model_size=small  
 ```
-
-Note that as the whole process requires large amount of memory, the process might crash halfway.
-
-
-Please download directly from our Google Drive. [[Link](https://drive.google.com/drive/folders/1B-XNvIdGZazLvDjnH2xWGUBfoe-Jt53B?usp=sharing)]
-<!-- ```{shell} -->
-<!-- $ python runner/build_bert_embeddings.py --model_size=small -->  
-<!-- ``` -->
-
 
 *tf-idf features*
 
@@ -87,9 +78,7 @@ Note that once each model finishes fitting to the data, the code also stored the
 
 ### Training code for sequential model
 
-The training of LSTM on BERT embeddings were all done in Google Collab. 
-These notebooks were then saved as jupyter notebook, and stored in this repository. 
-To view the result, please view the notebooks in "report/rnn" folder (e.g., [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/rnn/LibOfCongress_LSTM.ipynb)].
+These notebooks for LSTM on BERT and word2vec ware all located in the `report/nnn` folder. (e.g., [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/rnn/LibOfCongress_LSTM.ipynb)].
 
 
 ![screenshot_rnn_1](https://github.com/ahmad-PH/iml_group_proj/blob/main/public/rnn_notebook_screenshot_1.png?raw=true)
