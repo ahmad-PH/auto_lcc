@@ -4,7 +4,7 @@
 
 ### Checklist
 
-1. Install python packages with requirements.txt
+1. Install python packages with [requirements.txt](https://github.com/ahmad-PH/iml_group_proj/blob/main/requirements.txt)
 
 ```
 $ pip install -r requirements.txt
@@ -27,7 +27,7 @@ If that's the case, please try again, or download the data directly from our Goo
 ### Running the training code for non-sequential model
 
 **Starting point**  
-The main notebook for running all the models is in the notebook [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/Library%20of%20Congression%20Classification.ipynb)].  
+The main notebook for running all the models is in this notebook [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/Library%20of%20Congression%20Classification.ipynb)].  
 Note that the training process required preprocessed embeddings data which lies in "github_data" folder. 
 
 **Caching**  
@@ -40,7 +40,7 @@ Note that once each model finishes fitting to the data, the code also stored the
 
 The training of LSTM on BERT embeddings were all done in Google Collab. 
 These notebooks were then saved as jupyter notebook, and stored in this repository. 
-To view the result, please view the notebooks in "report/rnn" folder.
+To view the result, please view the notebooks in "report/rnn" folder (e.g., [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/rnn/LibOfCongress_LSTM.ipynb)].
 
 
 ![screenshot_rnn_1](https://github.com/ahmad-PH/iml_group_proj/blob/main/public/rnn_notebook_screenshot_1.png?raw=true)
