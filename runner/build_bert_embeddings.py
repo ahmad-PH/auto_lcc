@@ -1,6 +1,6 @@
 import os
-runner/build_bert_embeddings.py
 import time
+import click
 import pickle
 import pandas as pd
 from tqdm import tqdm
@@ -8,10 +8,6 @@ from typing import List, Tuple
 from transformers import BertModel, BertTokenizer
 
 DATA_PATH = "github_data"
-model_size = "large"#["tiny", "small", "large"]
-
-BERT_MODEL_NAME = f"prajjwal1/bert-{model_size}"
-OUTPUT_ROOT_PATH = f"github_data/bert_{model_size}_{}.pk"
 
 BERT_NAME_MAPPER = {
         "tiny":  "prajjwal1/bert-tiny",
@@ -31,9 +27,16 @@ with open(os.path.join(DATA_PATH, "trainTest.pk"), 'rb') as f:
     train = tuple_to_df(pickle.load(f))
     test = tuple_to_df(pickle.load(f))
 
+@click.command()
+@click.option("--model_size", default="small", help="size of BERT model. expected [tiny, small, large]")
 def build_bert_embeddings(model_size: str):
+    assert model_size in ["tiny", "small", "large"], f"{model_size} not expected, expected [tiny, small, large]"
+
+    OUTPUT_ROOT_PATH = "github_data/bert_" + model_size + "_{}.pk"
+    
+    print(f"Downloading ({BERT_NAME_MAPPER[model_size]})")
     bert_tokenizer = BertTokenizer.from_pretrained(BERT_NAME_MAPPER[model_size])
-    model = BertModel.from_pretrained(BERT_MODEL_NAME)
+    model = BertModel.from_pretrained(BERT_NAME_MAPPER[model_size])
 
     def vprint(s):
         if VERBOSE:
@@ -54,7 +57,6 @@ def build_bert_embeddings(model_size: str):
     vprint("Getting BERT embeddings...")
     os.makedirs(OUTPUT_ROOT_PATH, exist_ok=True)
 
-    # for (titles, synopsis, name) in [(test.title, test.synopsis, "test"),(train.title, train.synopsis, "train")]:
     for (titles, synopsis, name) in [(train.title, train.synopsis, "train")]:
         title_embeddings = from_sentences_to_bert_embeddings(titles)
         synopsis_embeddings = from_sentences_to_bert_embeddings(synopsis)
