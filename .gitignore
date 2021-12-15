@@ -9,7 +9,6 @@ kernels.json
 notebooks/*
 github_data/*
 sync.sh
-requirements.txt
 setup.py
 /* iml_group_proj/* */
 iml_group_proj_back/*
