@@ -25,7 +25,7 @@ If not, use the runner python scripts in "runner" folder to create features.
 Use the command below to build all the features. The whole features preparation steps take around 2.5 hours.
 
 ```{shell}
-$ python runner/build.py
+$ python runner/build_all_features.py
 ```
 
 
