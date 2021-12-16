@@ -1,4 +1,6 @@
-## Automatic Library of Congress Classification Code
+## Automatic Library of Congress Classification 
+
+The [Library of Congress Classification system](https://www.loc.gov/catdir/cpso/lcco/) is a complex bibliographic classification system that can make manual book classification challenging. To ease the challenge of classification we propose a text classification model that classifies documents based on their title and synopsis. We hypothesized that incorporating synopses and, using word embeddings to vectorize the title and synopses would improve classification. To test out our hypotheses we designed a Naive Bayes classifier, Support Vector Machine, Multi-Layer Perceptron, and LSTM to predict 15 of 21 Library of Congress classes. The LSTM with large BERT embeddings outperformed all other models and was able to classify documents with 76% accuracy when trained on a document’s title and synopsis. This is competitive with previous models that classified documents using their Library of Congress Subject Headings. 
 
 ---
 ### Dependencies
