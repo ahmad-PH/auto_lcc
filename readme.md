@@ -6,7 +6,7 @@ In this work we propose the usage of word embeddings, made possible by recent ad
 
 To test out our hypotheses we designed Naive Bayes classifiers, Support Vector Machines, Multi-Layer Perceptrons, and LSTMs to predict 15 of 21 Library of Congress classes. The LSTM model with large BERT embeddings outperformed all other models and was able to classify documents with 76% accuracy when trained on a document’s title and synopsis. This is competitive with previous models that classified documents using their Library of Congress Subject Headings.
 
-For a more detailed explanation of our work, please see our project report.
+For a more detailed explanation of our work, please see our [project report](https://github.com/ahmad-PH/auto_lcc/blob/main/report.pdf).
 
 ---
 ### Dependencies
