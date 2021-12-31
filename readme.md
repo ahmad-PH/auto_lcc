@@ -98,3 +98,14 @@ These notebooks for LSTM on BERT and word2vec ware all located in the `report/nn
 
 
 The rnn codes (LSTM, GRU) can also be found in iml_group_proj/model/bert_[lstm|gpu].py
+
+## Contributors (in no specific order)
+
+* **Katie Warburton** - *Researched previous automatic LCC attempts and found the dataset. Wrote the introduction and helped to write the discussion. Researched and understood the MARC 21 bibliographic standard to parse through the dataset and extract documents with an LCC, title, and synopsis. Balanced the dataset and split it into a train and test set. Described data balancing and the dataset in the report.* - [katie-warburton](https://github.com/katie-warburton)
+
+* **Yujie Chen** - *Trained and assessed the performance of SVM models and reported the SVM and general model development approaches and relevant results.* - [Yujie-C](https://github.com/Yujie-C)
+
+* **Teerapat Chaiwachirasak** - *Wrote the code for generating tf-idf features and BERT embeddings. Trained Naive Bayes and MLP on tf-idf features and BERT embeddings. Wrote training pipelines that take ML models from the whole team and train them together in one same workflow with multiple data settings (title only, synopsis only, and title + synopsis) to get a summarized and unified result. Trained LSTM models on BERT embeddings on (Google Collab).* - [Teerapat12](https://github.com/Teerapat12)
+
+* **Ahmad Pourihosseini** - *Wrote the code for generating word2vec embeddings and its corresponding preprocessing and the code for MLP and LSTM models on these embeddings. Came up with and implemented the idea of visualizing the averaged embeddings. Wrote the parts of the report corresponding to these sections.* - [ahmad-PH](https://github.com/ahmad-PH)
+
