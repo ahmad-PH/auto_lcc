@@ -28,7 +28,7 @@ seaborn=0.11.2
 
 ### Checklist
 
-1. Install the python packages listed above with [requirements.txt](https://github.com/ahmad-PH/iml_group_proj/blob/main/requirements.txt)
+1. Install the python packages listed above with [requirements.txt](https://github.com/ahmad-PH/auto_lcc/blob/main/requirements.txt)
 
 ```
 $ pip install -r requirements.txt
@@ -84,7 +84,7 @@ Note that the training process required preprocessed embeddings data which lies 
 **Caching**  
 Note that once each model finishes fitting to the data, the code also stored the result model as a pickle file in the "_cache" folder.
 
-![nonsequential_notebook_screenshot_1.png](https://github.com/ahmad-PH/iml_group_proj/blob/main/public/nonsequential_notebook_screenshot_1.png?raw=true)
+![nonsequential_notebook_screenshot_1.png](https://github.com/ahmad-PH/auto_lcc/blob/main/public/nonsequential_notebook_screenshot_1.png?raw=true)
 
 
 ### Training code for sequential model
@@ -92,9 +92,9 @@ Note that once each model finishes fitting to the data, the code also stored the
 These notebooks for LSTM on BERT and word2vec ware all located in the `report/nnn` folder. (e.g., [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/rnn/LibOfCongress_LSTM.ipynb)].
 
 
-![screenshot_rnn_1](https://github.com/ahmad-PH/iml_group_proj/blob/main/public/rnn_notebook_screenshot_1.png?raw=true)
+![screenshot_rnn_1](https://github.com/ahmad-PH/auto_lcc/blob/main/public/rnn_notebook_screenshot_1.png?raw=true)
 
-![screenshot_rnn_2](https://github.com/ahmad-PH/iml_group_proj/blob/main/public/rnn_notebook_screenshot_2.png?raw=true)
+![screenshot_rnn_2](https://github.com/ahmad-PH/auto_lcc/blob/main/public/rnn_notebook_screenshot_2.png?raw=true)
 
 
 The rnn codes (LSTM, GRU) can also be found in iml_group_proj/model/bert_[lstm|gpu].py
