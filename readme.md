@@ -78,7 +78,7 @@ If the download still fails, then please download the data directly from our Goo
 ### Running the training code for non-sequential model
 
 **Starting point**  
-The main notebook for running all the models is in this notebook [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/Library%20of%20Congression%20Classification.ipynb)].  
+The main notebook for running all the models is in this notebook [[Link](https://github.com/ahmad-PH/auto_lcc/blob/main/report/Library%20of%20Congress%20Classification.ipynb)].  
 Note that the training process required preprocessed embeddings data which lies in "github_data" folder. 
 
 **Caching**  
@@ -89,7 +89,7 @@ Note that once each model finishes fitting to the data, the code also stored the
 
 ### Training code for sequential model
 
-These notebooks for LSTM on BERT and word2vec ware all located in the `report/nnn` folder. (e.g., [[Link](https://github.com/ahmad-PH/iml_group_proj/blob/main/report/rnn/LibOfCongress_LSTM.ipynb)].
+These notebooks for LSTM on BERT and word2vec ware all located in the `report/nnn` folder. (e.g., [[Link](https://github.com/ahmad-PH/auto_lcc/blob/main/report/rnn/LibOfCongress_LSTM_BERT_Large.ipynb)].
 
 
 ![screenshot_rnn_1](https://github.com/ahmad-PH/auto_lcc/blob/main/public/rnn_notebook_screenshot_1.png?raw=true)
