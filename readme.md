@@ -4,7 +4,9 @@ The [Library of Congress Classification (LCC)](https://www.loc.gov/catdir/cpso/l
 
 In this work we propose the usage of word embeddings, made possible by recent advances in NLP, to take advantage of the fairly rich semantic information that they provide. Usage of word embeddings allows us to effectively use the information in the synposis of the books which contains a great deal of information about the record. We hypothesize that the usage of word embeddings and incorporating synopses would yield better performance over the classifcation task, while also freeing us from relying on [Library of Congress Subject Headings (LCSH)](https://www.loc.gov/aba/publications/FreeLCSH/freelcsh.html), which are expensive annotations that previous work has used.
 
-To test out our hypotheses we designed Naive Bayes classifiers, Support Vector Machines, Multi-Layer Perceptrons, and LSTMs to predict 15 of 21 Library of Congress classes. The LSTM model with large BERT embeddings outperformed all other models and was able to classify documents with 76% accuracy when trained on a document’s title and synopsis. This is competitive with previous models that classified documents using their Library of Congress Subject Headings. 
+To test out our hypotheses we designed Naive Bayes classifiers, Support Vector Machines, Multi-Layer Perceptrons, and LSTMs to predict 15 of 21 Library of Congress classes. The LSTM model with large BERT embeddings outperformed all other models and was able to classify documents with 76% accuracy when trained on a document’s title and synopsis. This is competitive with previous models that classified documents using their Library of Congress Subject Headings.
+
+For a more detailed explanation of our work, please see our project report.
 
 ---
 ### Dependencies
