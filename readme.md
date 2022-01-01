@@ -84,17 +84,9 @@ Note that the training process required preprocessed embeddings data which lies 
 **Caching**  
 Note that once each model finishes fitting to the data, the code also stored the result model as a pickle file in the "_cache" folder.
 
-![nonsequential_notebook_screenshot_1.png](https://github.com/ahmad-PH/auto_lcc/blob/main/public/nonsequential_notebook_screenshot_1.png?raw=true)
-
-
 ### Training code for sequential model
 
 These notebooks for LSTM on BERT and word2vec ware all located in the `report/nnn` folder. (e.g., [[Link](https://github.com/ahmad-PH/auto_lcc/blob/main/report/rnn/LibOfCongress_LSTM_BERT_Large.ipynb)].
-
-
-![screenshot_rnn_1](https://github.com/ahmad-PH/auto_lcc/blob/main/public/rnn_notebook_screenshot_1.png?raw=true)
-
-![screenshot_rnn_2](https://github.com/ahmad-PH/auto_lcc/blob/main/public/rnn_notebook_screenshot_2.png?raw=true)
 
 
 The rnn codes (LSTM, GRU) can also be found in iml_group_proj/model/bert_[lstm|gpu].py
