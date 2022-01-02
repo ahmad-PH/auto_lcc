@@ -91,6 +91,28 @@ These notebooks for LSTM on BERT and word2vec ware all located in the `report/nn
 
 The rnn codes (LSTM, GRU) can also be found in iml_group_proj/model/bert_[lstm|gpu].py
 
+## Results
+The below table contains a summary of algorithm performances based on the choice of features.
+|            	| Naive Bayes 	| SVC    	| MLP    	| LSTM   	|
+|------------	|-------------	|--------	|--------	|--------	|
+| Accuracy   	|             	|        	|        	|        	|
+| TF-IDF     	| 33.87%      	| 62.30% 	| 67.93% 	| NA     	|
+| word2vec   	| 46.07%      	| 69.03% 	| 69.93% 	| 71.77% 	|
+| BERT_large 	| 50.67%      	| 75.13% 	| 75.60% 	| 76.03% 	|
+| Precision  	|             	|        	|        	|        	|
+| TF-IDF     	| 42.25%      	| 66.99% 	| 68.50% 	| NA     	|
+| word2vec   	| 51.69%      	| 69.60% 	| 71.12% 	| 72.12% 	|
+| BERT_large 	| 53.57%      	| 75.43% 	| 75.79% 	| 76.10% 	|
+| Recall     	|             	|        	|        	|        	|
+| TF-IDF     	| 33.87%      	| 62.30% 	| 67.93% 	| NA     	|
+| word2vec   	| 46.07%      	| 69.03% 	| 69.93% 	| 71.77% 	|
+| BERT_large 	| 50.67%      	| 75.13% 	| 75.60% 	| 76.03% 	|
+| F1 Score   	|             	|        	|        	|        	|
+| TF-IDF     	| 33.82%      	| 62.59% 	| 67.97% 	| NA     	|
+| word2vec   	| 46.45%      	| 69.13% 	| 69.83% 	| 71.75% 	|
+| BERT_large 	| 50.38%      	| 75.19% 	| 75.51% 	| 76.01% 	|
+
+
 ## Contributors (in no specific order)
 
 * **Katie Warburton** - *Researched previous automatic LCC attempts and found the dataset. Wrote the introduction and helped to write the discussion. Researched and understood the MARC 21 bibliographic standard to parse through the dataset and extract documents with an LCC, title, and synopsis. Balanced the dataset and split it into a train and test set. Described data balancing and the dataset in the report.* - [katie-warburton](https://github.com/katie-warburton)
