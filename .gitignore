@@ -1,4 +1,4 @@
-ecratchpad/*
+scratchpad/*
 *.ipynb_checkpoints
 *__pycache__*
 *_output/
@@ -6,7 +6,6 @@ ecratchpad/*
 .python-version
 *.egg-info/*
 kernels.json
-notebooks/*
 sync.sh
 setup.py
 iml_group_proj_back/*
