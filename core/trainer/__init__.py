@@ -8,7 +8,7 @@ from iml_group_proj.config import RANDOM_STATE
 
 class TrainedModel(NamedTuple):
     name: str
-    model: Any # Any functoin that has .predict_proba()
+    model: Any # Any function that has .predict_proba()
     info: Dict[str, Any] # Information about the training (e.g., is_train?, with_sypnosis?)
         
 
