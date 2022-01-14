@@ -43,7 +43,7 @@ def prep_pipeline(cleanerId: CleanerId, prereqs: List[CleanerId] = []):
 
 def clean_text(text_column: pd.Series, pipelines: List[Callable]) -> pd.Series:
     status = set()
-    # Immutable just to keep our lives sane, might change latter forperformance
+    # Immutable just to keep our lives sane, might change later for performance
     _text_column = text_column.copy() 
 
     for pipeline_f in pipelines:
