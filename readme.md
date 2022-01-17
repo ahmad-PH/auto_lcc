@@ -99,7 +99,7 @@ The below table contains a summary of algorithm performances based on the choice
 
 * **Yujie Chen** - *Trained and assessed the performance of SVM models and reported the SVM and general model development approaches and relevant results.* - [Yujie-C](https://github.com/Yujie-C)
 
-* **Teerapat Chaiwachirasak** - *Wrote the code for generating tf-idf features and BERT embeddings. Trained Naive Bayes and MLP on tf-idf features and BERT embeddings. Wrote training pipelines that take ML models from the whole team and train them together in one same workflow with multiple data settings (title only, synopsis only, and title + synopsis) to get a summarized and unified result. Trained LSTM models on BERT embeddings on (Google Collab).* - [Teerapat12](https://github.com/Teerapat12)
+* **Teerapat Chaiwachirasak** - *Wrote the code for generating tf-idf features and BERT embeddings. Trained Naive Bayes and MLP on tf-idf features and BERT embeddings. Wrote training pipelines that take ML models from the whole team and train them together in one same workflow with multiple data settings (title only, synopsis only, and title + synopsis) to get a summarized and unified result. Trained LSTM models on BERT embeddings on (Google Collab).* - [teerapat-ch](https://github.com/teerapat-ch)
 
 * **Ahmad Pourihosseini** - *Wrote the code for generating word2vec embeddings and its corresponding preprocessing and the code for MLP and LSTM models on these embeddings. Came up with and implemented the idea of visualizing the averaged embeddings. Wrote the parts of the report corresponding to these sections.* - [ahmad-PH](https://github.com/ahmad-PH)
 
